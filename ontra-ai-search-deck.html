@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#F3F6FC">
+<title>Growing AI Search into a platform – Khoa D. Pham</title>
+<meta name="description" content="A case study on growing Ontra AI Search from one product into a platform: customer discovery, streaming answers, citations, and search effort controls.">
+<link rel="canonical" href="https://khoadpham.com/ontra-ai-search-deck">
+<meta property="og:site_name" content="Khoa D. Pham">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Growing AI Search into a platform – Khoa D. Pham">
+<meta property="og:description" content="A case study on growing Ontra AI Search from one product into a platform: customer discovery, streaming answers, citations, and search effort controls.">
+<meta property="og:url" content="https://khoadpham.com/ontra-ai-search-deck">
+<meta property="og:image" content="https://khoadpham.com/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Newsreader:opsz,wght@6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/deck.css">
+</head>
+<body>
+<div class="deck" role="region" aria-label="Case study slides">
+  <section class="slide on" aria-label="Title">
+    <span class="mark">Case study</span>
+    <h1>Growing AI Search from one product into a platform</h1>
+    <p class="sub">Khoa D. Pham, Senior UX Designer at Ontra. Use the arrow keys or the buttons below to move through the slides.</p>
+  </section>
+
+  <section class="slide" aria-label="Where it started">
+    <h2>Where it started</h2>
+    <p>AI Search lets legal and deal teams ask questions of their documents and get cited answers.</p>
+    <ul>
+      <li>Every question ran the same way, and people waited on a blank screen.</li>
+      <li>It served one product, while other teams wanted it for their own documents.</li>
+      <li>We knew how much it was used, but not how or why.</li>
+    </ul>
+  </section>
+
+  <section class="slide" aria-label="Listening and widening">
+    <h2>Listen first, then widen</h2>
+    <ul>
+      <li>Ran co-development and discovery calls with customers, 36 in a single day at the peak.</li>
+      <li>Built async discovery forms and weekly feedback, performance, and retention reports, which other designers began to adopt.</li>
+      <li>Helped launch AI Search for Funds, then worked with customers on Credit and Atlas, with personas and use cases for compliance teams.</li>
+    </ul>
+      <p class="links"><a href="prototypes/prototype-entities-ai.html">Try the Entities and AI prototype</a></p>
+  </section>
+
+  <section class="slide" aria-label="Making trust visible">
+    <h2>Make the answer easy to trust</h2>
+    <ul>
+      <li>Answers stream in as soon as there is something to show, and the steps stay visible while it works.</li>
+      <li>Citations open in a split screen, and hovering an inline citation shows the source text.</li>
+      <li>People can rename and delete past conversations.</li>
+    </ul>
+      <p class="links"><a href="prototypes/prototype-ask-ai-streaming.html">Try the streaming prototype</a><a href="prototypes/prototype-ask-ai-hover.html">Try the citation hover prototype</a></p>
+  </section>
+
+  <section class="slide" aria-label="Control over effort">
+    <h2>Give people control over effort</h2>
+    <p>I proposed three levels: Quick, Balanced, and Thorough, plus a one-click retry after a weak answer.</p>
+    <p>Our evaluation showed that more effort made answers more complete but not more correct. So the copy promises "a more complete answer" and nothing about accuracy.</p>
+    <p class="sub">Status: in review.</p>
+      <p class="links"><a href="prototypes/prototype-ask-ontra-effort.html">Try the search effort prototype</a></p>
+  </section>
+
+  <section class="slide" aria-label="Results">
+    <h2>What happened</h2>
+    <div class="stats">
+      <div class="stat"><span class="big">~200 to 700</span><span>weekly queries, early 2026 to September</span></div>
+      <div class="stat"><span class="big">95s to 45s</span><span>mean latency</span></div>
+      <div class="stat"><span class="big">~17s</span><span>to first answer text</span></div>
+    </div>
+    <p style="margin-top:1.25rem">Weekly queries hit all-time highs, driven by Funds. MCP, Ontra's tool connection for outside AI apps, grew from a handful of sessions a week to about 90.</p>
+    <p>Cutting latency by more than half did more for the experience than any single screen.</p>
+  </section>
+
+    <section class="slide" aria-label="Query growth">
+    <h2>More people asking more questions</h2>
+    <figure><img src="images/chart-queries.webp" width="1389" height="593" loading="lazy" decoding="async" alt="Bar chart of weekly AI Search queries by product and source, rising from about 200 a week to a peak of 700 in September 2026"><figcaption>Weekly AI Search queries by product and source. Funds, Credit, and Atlas each add volume, in the app and through MCP.</figcaption></figure>
+  </section>
+
+  <section class="slide" aria-label="Latency">
+    <h2>Answers arrive in half the time</h2>
+    <figure><img src="images/chart-latency.webp" width="1400" height="708" loading="lazy" decoding="async" alt="Line chart of weekly mean AI Search latency falling from about 95 seconds to about 45 seconds, with time to first answer text near 17 seconds"><figcaption>Weekly mean AI Search latency. The average fell from 95s to 45s, and the first answer text appears in about 17s.</figcaption></figure>
+  </section>
+
+  <section class="slide" aria-label="MCP sessions">
+    <h2>A second way in: MCP</h2>
+    <figure><img src="images/chart-mcp.webp" width="1400" height="622" loading="lazy" decoding="async" alt="Stacked bar chart of weekly MCP sessions for Atlas and Insight, growing from 7 in late May to 94 in mid September"><figcaption>MCP sessions per week, for Atlas and Insight (complete 7-day windows).</figcaption></figure>
+  </section>
+
+  <section class="slide" aria-label="Takeaways">
+    <h2>What I took from it</h2>
+    <ul>
+      <li>Measure before designing. The effort work held together because we tested it.</li>
+      <li>Promise only what the data supports. A claim the data could not back up never reached the interface.</li>
+      <li>Designers who ship code, even small changes, learn faster. I opened about 20 pull requests in Q3, including my first backend changes, and logged what each one taught me for other designers.</li>
+    </ul>
+  </section>
+
+  <div class="bar">
+    <a href="index.html">Back to portfolio</a>
+    <span class="count" id="count" aria-live="polite"></span>
+    <span><button id="prev">Previous</button> <button id="next">Next</button></span>
+  </div>
+</div>
+<script src="js/deck.js" defer></script>
+</body>
+</html>
