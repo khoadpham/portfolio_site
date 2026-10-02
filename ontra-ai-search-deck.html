@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Newsreader:opsz,wght@6..72,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/deck.css">
+<link rel="stylesheet" href="css/deck.css?v=2">
 </head>
 <body>
 <div class="deck" role="region" aria-label="Case study slides">
@@ -33,64 +33,82 @@
 
   <section class="slide" aria-label="Where it started">
     <h2>Where it started</h2>
-    <p>AI Search lets legal and deal teams ask questions of their documents and get cited answers.</p>
+    <div class="split">
+    <div>
+    <p>Obligations AI Search was the legacy product that allowed users to ask one question and get one answer about their legal obligations in their documents.</p>
     <ul>
-      <li>Every question ran the same way, and people waited on a blank screen.</li>
-      <li>It served one product, while other teams wanted it for their own documents.</li>
+      <li>You could only ask one question and get one answer.</li>
+      <li>It listed sources it used to generate the answer but could not show you specifically what or where.</li>
+      <li>It served only two document types while customers needed answers on their many document types.</li>
       <li>We knew how much it was used, but not how or why.</li>
     </ul>
+    </div>
+    <figure><img src="images/legacy-ai-search.webp" width="1087" height="858" loading="lazy" decoding="async" alt="The legacy Obligations AI Search screen: one question about the tax treatment of OEP IX Ethos, a one-line answer based on 5 tax documents, and a list of supporting document links"><figcaption>The legacy experience: one question, one answer, and a list of files with no pointer to where the answer came from.</figcaption></figure>
+    </div>
   </section>
 
   <section class="slide" aria-label="Listening and widening">
     <h2>Listen first, then widen</h2>
     <ul>
-      <li>Ran co-development and discovery calls with customers, 36 in a single day at the peak.</li>
+      <li>Ran co-development and discovery calls with customers for 6 months.</li>
       <li>Built async discovery forms and weekly feedback, performance, and retention reports, which other designers began to adopt.</li>
-      <li>Helped launch AI Search for Funds, then worked with customers on Credit and Atlas, with personas and use cases for compliance teams.</li>
+      <li>Helped launch Ontra AI for Fund documents, then worked with customers on Credit and Atlas, with personas and use cases for compliance teams.</li>
     </ul>
-      <p class="links"><a href="prototypes/prototype-entities-ai.html">Try the Entities and AI prototype</a></p>
+    <figure class="zoomable"><button type="button" class="zoom-open" data-full="images/opportunity-map-8000.webp" data-width="8000" data-height="4308" aria-label="Open the opportunity map full screen to zoom and pan"><img src="images/opportunity-map-1600.webp" width="1600" height="862" loading="lazy" decoding="async" alt="Opportunity map grouping customer problems under four themes: accuracy and trust, search, output and workflow, and document management. Each problem is tagged Now, Next, or Later with supporting evidence and customer quotes."><span class="zoom-hint">Click to enlarge</span></button><figcaption>The opportunity map from discovery: customer problems by theme, ranked by when we would tackle them, with the evidence behind each one.</figcaption></figure>
   </section>
 
   <section class="slide" aria-label="Making trust visible">
     <h2>Make the answer easy to trust</h2>
+    <div class="split">
+    <div>
+    <p class="problem"><strong>The problem:</strong> customers needed "clearer visibility into the sources and citations behind the answers" so they could verify them quickly, but the old search only listed files. It was also "too slow," which customers said was "breaking my workflow."</p>
     <ul>
       <li>Answers stream in as soon as there is something to show, and the steps stay visible while it works.</li>
-      <li>Citations open in a split screen, and hovering an inline citation shows the source text.</li>
-      <li>People can rename and delete past conversations.</li>
+      <li>Show users specific evidence early and often.</li>
+      <li>Citations open in a split screen, and hovering an inline citation shows the source text for less context switching.</li>
+      <li>Chats are named automatically to give customers better context for their conversations.</li>
     </ul>
       <p class="links"><a href="prototypes/prototype-ask-ai-streaming.html">Try the streaming prototype</a><a href="prototypes/prototype-ask-ai-hover.html">Try the citation hover prototype</a></p>
+    </div>
+    <figure><img src="images/linked-obligation-hover.webp" width="947" height="578" loading="lazy" decoding="async" alt="An AI answer about changes in a credit agreement amendment, with highlighted links to amended terms and affected obligations. Hovering one obligation shows a card with its status, source section, and category, a note that the cap no longer matches the amended agreement, and links to open it or ask AI about it."><figcaption>Hovering a highlighted item shows its details and what needs updating, without leaving the answer.</figcaption></figure>
+    </div>
   </section>
 
   <section class="slide" aria-label="Control over effort">
     <h2>Give people control over effort</h2>
-    <p>I proposed three levels: Quick, Balanced, and Thorough, plus a one-click retry after a weak answer.</p>
-    <p>Our evaluation showed that more effort made answers more complete but not more correct. So the copy promises "a more complete answer" and nothing about accuracy.</p>
+    <div class="split">
+    <div>
+    <p class="problem"><strong>The problem:</strong> speed and coverage pulled against each other. Quick lookups felt "too slow," while answers to broad questions were often "incomplete, missing key obligations or provisions."</p>
+    <p>I proposed Auto as the default: Ontra matches the depth to each question and always shows which level it used. People can also pick Quick, Balanced, or Thorough themselves, and retry with one click after a weak answer.</p>
+    <p>Each level says how long it takes and how many documents it reads. Our evaluation showed that more effort made answers more complete but not more correct, so the menu presents deeper modes as more time for wider coverage, not better accuracy.</p>
     <p class="sub">Status: in review.</p>
       <p class="links"><a href="prototypes/prototype-ask-ontra-effort.html">Try the search effort prototype</a></p>
+    </div>
+    <figure><img src="images/search-effort-menu.webp" width="822" height="862" loading="lazy" decoding="async" alt="The Ask about your documents screen with the search effort menu open. Auto is the default and matches depth to each question. Quick reads 8 documents with no wait, Balanced reads 40 with a short wait, and Thorough reads all 312 and is labelled worth the wait."><figcaption>The effort menu: Auto by default, with each level showing how long it takes and how many documents it reads.</figcaption></figure>
+    </div>
   </section>
 
   <section class="slide" aria-label="Results">
-    <h2>What happened</h2>
+    <span class="mark">What happened</span>
+    <h2>More people asking more questions</h2>
     <div class="stats">
       <div class="stat"><span class="big">~200 to 700</span><span>weekly queries, early 2026 to September</span></div>
       <div class="stat"><span class="big">95s to 45s</span><span>mean latency</span></div>
       <div class="stat"><span class="big">~17s</span><span>to first answer text</span></div>
     </div>
     <p style="margin-top:1.25rem">Weekly queries hit all-time highs, driven by Funds. MCP, Ontra's tool connection for outside AI apps, grew from a handful of sessions a week to about 90.</p>
-    <p>Cutting latency by more than half did more for the experience than any single screen.</p>
-  </section>
-
-    <section class="slide" aria-label="Query growth">
-    <h2>More people asking more questions</h2>
-    <figure><img src="images/chart-queries.webp" width="1389" height="593" loading="lazy" decoding="async" alt="Bar chart of weekly AI Search queries by product and source, rising from about 200 a week to a peak of 700 in September 2026"><figcaption>Weekly AI Search queries by product and source. Funds, Credit, and Atlas each add volume, in the app and through MCP.</figcaption></figure>
+    <figure class="compact"><img src="images/chart-queries.webp" width="1389" height="593" loading="lazy" decoding="async" alt="Bar chart of weekly AI Search queries by product and source, rising from about 200 a week to a peak of 700 in September 2026"><figcaption>Weekly AI Search queries by product and source. Funds, Credit, and Atlas each add volume, in the app and through MCP.</figcaption></figure>
   </section>
 
   <section class="slide" aria-label="Latency">
+    <span class="mark">What happened</span>
     <h2>Answers arrive in half the time</h2>
+    <p>Cutting latency by more than half did more for the experience than any single screen.</p>
     <figure><img src="images/chart-latency.webp" width="1400" height="708" loading="lazy" decoding="async" alt="Line chart of weekly mean AI Search latency falling from about 95 seconds to about 45 seconds, with time to first answer text near 17 seconds"><figcaption>Weekly mean AI Search latency. The average fell from 95s to 45s, and the first answer text appears in about 17s.</figcaption></figure>
   </section>
 
   <section class="slide" aria-label="MCP sessions">
+    <span class="mark">What happened</span>
     <h2>A second way in: MCP</h2>
     <figure><img src="images/chart-mcp.webp" width="1400" height="622" loading="lazy" decoding="async" alt="Stacked bar chart of weekly MCP sessions for Atlas and Insight, growing from 7 in late May to 94 in mid September"><figcaption>MCP sessions per week, for Atlas and Insight (complete 7-day windows).</figcaption></figure>
   </section>
@@ -101,8 +119,21 @@
       <li>Measure before designing. The effort work held together because we tested it.</li>
       <li>Promise only what the data supports. A claim the data could not back up never reached the interface.</li>
       <li>Designers who ship code, even small changes, learn faster. I opened about 20 pull requests in Q3, including my first backend changes, and logged what each one taught me for other designers.</li>
+      <li>Small, frequent iterations keep momentum and customer buy-in.</li>
     </ul>
   </section>
+
+  <dialog class="zoom" id="zoom" aria-label="Zoomable image">
+    <div class="zoom-stage" id="zoom-stage"><img id="zoom-img" alt=""></div>
+    <div class="zoom-tools">
+      <button type="button" id="zoom-out" aria-label="Zoom out">&minus;</button>
+      <span id="zoom-level" aria-live="polite">100%</span>
+      <button type="button" id="zoom-in" aria-label="Zoom in">+</button>
+      <button type="button" id="zoom-fit">Fit</button>
+      <button type="button" id="zoom-close">Close</button>
+    </div>
+    <p class="zoom-help">Drag to pan. Scroll, pinch, or double-click to zoom.</p>
+  </dialog>
 
   <div class="bar">
     <a href="index.html">Back to portfolio</a>
@@ -110,6 +141,6 @@
     <span><button id="prev">Previous</button> <button id="next">Next</button></span>
   </div>
 </div>
-<script src="js/deck.js" defer></script>
+<script src="js/deck.js?v=2" defer></script>
 </body>
 </html>
