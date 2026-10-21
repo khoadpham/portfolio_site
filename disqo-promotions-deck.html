@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#F3F6FC">
+<title>Impossible promotions – Khoa D. Pham</title>
+<meta name="description" content="A case study on fixing Survey Junkie's promotion program: why a 10,000-point promotion made engagement worse, and how simpler, trackable promotions cut churn from 47% to 13%.">
+<link rel="canonical" href="https://khoadpham.com/disqo-promotions-deck">
+<meta property="og:site_name" content="Khoa D. Pham">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Impossible promotions – Khoa D. Pham">
+<meta property="og:description" content="A case study on fixing Survey Junkie's promotion program: why a 10,000-point promotion made engagement worse, and how simpler, trackable promotions cut churn from 47% to 13%.">
+<meta property="og:url" content="https://khoadpham.com/disqo-promotions-deck">
+<meta property="og:image" content="https://khoadpham.com/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Newsreader:opsz,wght@6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/deck.css?v=4">
+</head>
+<body>
+<div class="deck" role="region" aria-label="Case study slides">
+  <section class="slide on" aria-label="Title">
+    <span class="mark">Case study</span>
+    <h1>Impossible promotions</h1>
+    <p class="sub">Khoa D. Pham, Principal Product Designer at Disqo, 2021–2024. Use the arrow keys or the buttons below to move through the slides.</p>
+  </section>
+
+  <section class="slide" aria-label="Where it started">
+    <h2>Where it started</h2>
+    <div class="split">
+    <div>
+    <p>Survey Junkie is Disqo's app for taking surveys and earning rewards, with about 12M members.</p>
+    <ul>
+      <li>Brands auction their surveys to platforms like ours because we have the audience.</li>
+      <li>Brands usually want very specific slices of demographics, so it is hard to qualify for a survey.</li>
+      <li>To keep answers honest, we run countermeasures that stop bad actors from exploiting the platform.</li>
+      <li>In short, members face a lot of barriers and hoops to jump through to be successful.</li>
+    </ul>
+    </div>
+    <figure><img src="images/disqo-app-home.webp" width="1401" height="1033" loading="lazy" decoding="async" alt="The Survey Junkie web app home screen: a grid of surveys to try, each showing its survey ID, length, and points, next to a points balance and a list of ways to earn."><figcaption>The Survey Junkie home screen: a feed of surveys, each worth points if you qualify.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="slide" aria-label="Marketing's idea">
+    <h2>Marketing's idea: a monthly promotion</h2>
+    <div class="split">
+    <div>
+    <ul>
+      <li>Start a promotion program to boost engagement.</li>
+      <li>Provide a consistent, predictable event that builds a habit.</li>
+      <li>The increase in engagement should offset the spend.</li>
+      <li>A monthly cadence worked best.</li>
+    </ul>
+    </div>
+    <figure><img src="images/disqo-email.webp" width="751" height="1110" loading="lazy" decoding="async" alt="A Survey Junkie promotion email headed 10,000 points could be yours. It offers a 500-point bonus for earning at least 500 points in 5 consecutive days and a chance at a 10,000-point raffle. Small print says surveys must be worth 20 points or more and members must complete at least 1 survey a day."><figcaption>The promotion email: a chance at 10,000 points, with the conditions in the small print.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="slide" aria-label="The problem">
+    <span class="mark">The problem</span>
+    <h2>Bigger rewards, less engagement</h2>
+    <p>We started a monthly promotion giving away up to 10,000 points. Despite this nearly 100x increase in rewards, engagement kept falling month over month.</p>
+    <div class="stats">
+      <div class="stat"><span class="big">22%</span><span>fewer surveys taken per member during the promotion</span></div>
+      <div class="stat"><span class="big">47%</span><span>of members churned the week after</span></div>
+      <div class="stat"><span class="big">92%</span><span>of members failed to complete it</span></div>
+    </div>
+    <p class="sub" style="margin-top:1.25rem">Compared with weeks without a promotion.</p>
+  </section>
+
+  <section class="slide" aria-label="The hypothesis">
+    <span class="mark">The hypothesis</span>
+    <h2>Too many conditions</h2>
+    <p class="problem"><strong>The hypothesis:</strong> the promotions were too confusing, with too many parameters.</p>
+    <p class="quote">"Earn a bonus 500 pts when you earn at least 500 pts in the next 5 consecutive days for a chance to be selected to win the 10,000 pts raffle. Surveys must be worth 20 pts or more to count. You must complete at least 1 survey per day."</p>
+  </section>
+
+  <section class="slide" aria-label="Email clicks">
+    <span class="mark">The research</span>
+    <h2>Why were the promotions so complicated?</h2>
+    <p>We automatically entered certain cohorts into promotions and told them by email. The design and language were written to get as many people as possible to click through, and to get past spam filters.</p>
+    <p class="problem"><strong>Insight:</strong> email conversion did not translate to in-app conversion.</p>
+  </section>
+
+  <section class="slide" aria-label="Average member">
+    <span class="mark">The research</span>
+    <h2>The average member couldn't finish</h2>
+    <div class="stats">
+      <div class="stat"><span class="big">10%</span><span>chance of qualifying for a survey</span></div>
+      <div class="stat"><span class="big">38 min</span><span>average time to qualify for a first survey</span></div>
+      <div class="stat"><span class="big">50 pts</span><span>average survey value</span></div>
+      <div class="stat"><span class="big">44 min</span><span>average session per day</span></div>
+      <div class="stat"><span class="big">50 pts</span><span>average earned per day</span></div>
+    </div>
+    <p class="sub" style="margin-top:1.25rem">Surveys can end early when a quota is full, demographics don't match, or answers are inconsistent.</p>
+    <p class="problem"><strong>Insight:</strong> the average member would not complete this promotion. At about 50 points a day, five days earns about 250 points, half of the 500 required.</p>
+  </section>
+
+  <section class="slide" aria-label="No progress tracking">
+    <span class="mark">The research</span>
+    <h2>Members were left in the dark</h2>
+    <div class="split">
+    <div>
+    <ul>
+      <li>Members were told about the promotion only by email and by this card in the app, which disappeared after the first view.</li>
+      <li>There was no progress tracking.</li>
+      <li>If you missed a day or didn't meet one of the requirements, you wouldn't know.</li>
+    </ul>
+    <p class="problem"><strong>Insight:</strong> the effort of tracking progress fell entirely on members.</p>
+    </div>
+    <figure><img src="images/disqo-promo-card.webp" width="751" height="1158" loading="lazy" decoding="async" alt="The Survey Junkie mobile home screen with a High five card offering a 500-point bonus for earning at least 500 points in 5 consecutive days and a chance at a 10,000-point raffle. The card shows no progress."><figcaption>The only in-app sign of the promotion, with no progress shown.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="slide" aria-label="Traffic and inventory">
+    <span class="mark">The research</span>
+    <h2>More traffic, the same surveys</h2>
+    <div class="split">
+    <div>
+    <div class="stats">
+      <div class="stat"><span class="big">53,000</span><span>peak concurrent members without a promotion</span></div>
+      <div class="stat"><span class="big">284,000</span><span>with a promotion</span></div>
+    </div>
+    <p style="margin-top:1.25rem">Promotions brought in far more traffic, but survey inventory stayed roughly the same. More members competed for the same surveys, and the chance of qualifying fell from 10% to 2%.</p>
+    <p class="problem"><strong>Insight:</strong> members felt it was impossible to succeed. Motivation dropped, and they churned.</p>
+    </div>
+    <figure><img src="images/disqo-traffic.webp" width="1401" height="1008" loading="lazy" decoding="async" alt="Line chart of app traffic from Monday to Sunday. In a promotion week, traffic spikes on Monday and falls through Thursday. In a normal week it stays low and flat. Survey inventory starts high on Monday and declines through the weekend."><figcaption>App traffic in a promotion week and a normal week, against survey inventory. Inventory is highest at the start of the week and lowest at the weekend.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="slide" aria-label="Simplify the promotion">
+    <span class="mark">The plan</span>
+    <h2>Simplify the promotion: cakes and compromise</h2>
+    <p class="problem"><strong>The problem:</strong> one offer stacked a long time commitment, a huge prize that wasn't guaranteed, and two more caveats.</p>
+    <div class="split">
+    <div>
+    <p class="quote">"Earn a 200 pts bonus when you complete 2 surveys in the next 3 days."</p>
+    <ul>
+      <li>A smaller reward, but members can earn it twice a month.</li>
+      <li>Counts completed surveys, which vary less than points and are easier to hit.</li>
+      <li>Easy to understand.</li>
+      <li>Less time to invest, with a day members can miss.</li>
+    </ul>
+    </div>
+    <figure class="zoomable"><button type="button" class="zoom-open" data-full="images/disqo-copy-4000.webp" data-width="4001" data-height="3356" aria-label="Open the before and after promotion copy full screen to zoom and pan"><img src="images/disqo-copy-1600.webp" width="1601" height="1344" loading="lazy" decoding="async" alt="Before and after promotion copy with annotations. The old offer is marked sweet treat, too difficult, long time investment, huge prize but not guaranteed, another caveat, and yet another caveat, next to an elaborate wedding cake. The new offer is marked smaller reward but can do it twice a month, switched to survey completes, easy to understand, and less time investment with a day they can miss, next to a cupcake."><span class="zoom-hint">Click to enlarge</span></button><figcaption>The old offer was a wedding cake. The new one is a cupcake.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="slide" aria-label="Show progress">
+    <span class="mark">The plan</span>
+    <h2>Show progress in the app</h2>
+    <p class="problem"><strong>The problem:</strong> members heard about the promotion once, then had no way to see where they stood.</p>
+    <div class="split">
+    <ul>
+      <li>The promotion card stays on the home screen for the whole promotion.</li>
+      <li>It tracks surveys completed toward the goal and shows the days left.</li>
+      <li>A completion state confirms when the bonus is earned.</li>
+    </ul>
+    <figure><img src="images/disqo-progress.webp" width="1601" height="869" loading="lazy" decoding="async" alt="Redesigned Survey Junkie screens on mobile and desktop. A Double down card offers a 200-point bonus for completing 2 surveys in 3 days, with a progress bar and days left. The mobile screen shows a You did it! completion banner."><figcaption>The redesigned promotion card on mobile and desktop, with progress, days left, and a completion state.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="slide" aria-label="What we did">
+    <span class="mark">The plan</span>
+    <h2>What we did, and what we couldn't</h2>
+    <ul>
+      <li><strong>Simplified the promotion.</strong> Done.</li>
+      <li><strong>Made the in-app promotion experience more transparent.</strong> Done.</li>
+      <li><strong>Adjusted survey inventory for the surge in members.</strong> Not done: acquisition spending was cut, so we couldn't.</li>
+      <li><strong>Tested other cohorts as promotion targets.</strong> We built a "high intent member" model to identify the behaviors that mark the best candidates for future promotions.</li>
+    </ul>
+  </section>
+
+  <section class="slide" aria-label="Results">
+    <span class="mark">What happened</span>
+    <h2>Fewer members gave up</h2>
+    <div class="stats">
+      <div class="stat"><span class="big">47% to 13%</span><span>of members churned the week after a promotion</span></div>
+      <div class="stat"><span class="big">22% fewer to 8% more</span><span>surveys taken per member during the promotion</span></div>
+      <div class="stat"><span class="big">92% to 64%</span><span>of members failed to complete the promotion</span></div>
+    </div>
+    <p class="sub" style="margin-top:1.25rem">Compared with weeks without a promotion.</p>
+  </section>
+
+  <section class="slide" aria-label="What's next">
+    <h2>What's still unsolved</h2>
+    <ul>
+      <li>Lack of survey inventory is still the biggest problem. The options are releasing more surveys, which may be lower quality, or spending more or finding cheaper surveys.</li>
+      <li>Expand the promotion program and try different formats.</li>
+      <li>Add reminders or notifications so members know when inventory is high or when they're close to finishing.</li>
+      <li>Try other ways to raise weekly and daily engagement: a guaranteed survey of the day, discounts and coupons, or activities besides surveys.</li>
+    </ul>
+  </section>
+
+  <dialog class="zoom" id="zoom" aria-label="Zoomable image">
+    <div class="zoom-stage" id="zoom-stage"><img id="zoom-img" alt=""></div>
+    <div class="zoom-tools">
+      <button type="button" id="zoom-out" aria-label="Zoom out">&minus;</button>
+      <span id="zoom-level" aria-live="polite">100%</span>
+      <button type="button" id="zoom-in" aria-label="Zoom in">+</button>
+      <button type="button" id="zoom-fit">Fit</button>
+      <button type="button" id="zoom-close">Close</button>
+    </div>
+    <p class="zoom-help">Drag to pan. Scroll, pinch, or double-click to zoom.</p>
+  </dialog>
+
+  <div class="bar">
+    <a href="index.html">Back to portfolio</a>
+    <span class="count" id="count" aria-live="polite"></span>
+    <span><button id="prev">Previous</button> <button id="next">Next</button></span>
+  </div>
+</div>
+<script src="js/deck.js?v=2" defer></script>
+</body>
+</html>
